@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    style
+      include style.css
+    body
+        h3
+            a(href='/') 웹서버 프로그램 개요
+        ul
+        - each topic in topics
+            li
+                a(href='/'+ topic.id)= topic.title
+        ul
+            li
+                a(href='/add') 글쓰기

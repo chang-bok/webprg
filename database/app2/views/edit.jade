@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    style
+      include style.css
+    body
+        h3
+            a(href='/') 웹서버 프로그램 개요
+        form(action='/edit/'+topic.id method='post')
+            p
+                input(type='text' name='title' value=topic.title)
+            p
+                textarea(name='description' cols='30' rows = '5')
+                    =topic.description
+            p
+                input(type='text' name='author' value=topic.author)
+            p
+                input(type='submit')

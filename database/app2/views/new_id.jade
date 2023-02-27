@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    style
+      include style.css
+    body
+        h3
+            a(href='/') 웹서버 프로그램 개요
+    ul
+    - each topic in topics
+        li
+            a(href='/'+topic.id)= topic.title
+    p
+        div 제목 : #{topic.title}
+        div 설명 : #{topic.description}
+        div 작성 : #{topic.author}
+
+    ul
+        li
+            a(href='/add') add
+        li
+            a(href='/edit/' + topic.id) edit
+        li
+            a(href='/delete/' + topic.id) delete

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEB Programming</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="java.js"></script> -->
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="index.html">WEB Programming</a></h1>
+    </header>
+    <div class="container">
+      <nav>
+        <a href="html1.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="vuejs.html">VueJs</a>
+        <a href="nodejs.html">NodeJs</a>
+      </nav>
+      <main>
+        <h2 align="center">회원가입</h2>
+        <form name="member">
+          <table align="center">
+            <tr>
+              <td>아이디</td>
+              <td>
+                <input
+                  type="text"
+                  name="id"
+                  onfocus="this.style.backgroundColor ='orange'"
+                  onblur="this.style.backgroundColor =''"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>비밀번호</td>
+              <td>
+                <input
+                  type="password"
+                  name="pw"
+                  onfocus="this.style.backgroundColor ='orange'"
+                  onblur="this.style.backgroundColor =''"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>전화번호</td>
+              <td>
+                <select name="phon1">
+                  <option>010</option>
+                  <option>02</option>
+                  <option>031</option>
+                  <option>051</option>
+                </select>
+                -
+                <input
+                  type="text"
+                  name="phone2"
+                  size="5"
+                  onfocus="this.style.backgroundColor ='orange'"
+                  onblur="this.style.backgroundColor =''"
+                />
+                -
+                <input
+                  type="text"
+                  name="phone3"
+                  size="5"
+                  onfocus="this.style.backgroundColor ='orange'"
+                  onblur="this.style.backgroundColor =''"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>이름</td>
+              <td>
+                <input
+                  type="text"
+                  name="name"
+                  onfocus="this.style.backgroundColor ='orange'"
+                  onblur="this.style.backgroundColor =''"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="radio" name="gender" value="m" checked />남자
+                <input type="radio" name="gender" value="f" />여자
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center">
+                <button onclick="check()">가입하기</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </main>
+
+      <article>
+        <a href="member.html">회원 가입 </a>
+        <a href="login.html">로그인 </a>
+        <!-- <button onclick="alert(Date())">날짜/시간</button>
+        <button onclick="body_color_day()">배경 밝음</button>
+        <button onclick="body_color_night()">배경 어둠</button> -->
+      </article>
+    </div>
+
+    <footer>
+      <i>
+        Copyright 2023. 지은이 all rights reserved.<br />
+        연락처 : 010-8906-3946
+      </i>
+    </footer>
+  </body>
+</html>

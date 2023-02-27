@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%=member.name%> + '님 글을 삭제하겠습니까??</h1>
+    <form action="/delete/<%=member.idx%>" +member.idx method="post">
+      <h3>비밀번호를 입력하세요 :</h3>
+      <input type="password" name="passwd" /><br />
+      <input type="submit" value="삭제" />
+    </form>
+    <a href="/list"> <h2>아니오</h2></a>
+  </body>
+</html>

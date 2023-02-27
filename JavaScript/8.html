@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>while 문</h1>
+
+    <script>
+      var i = 1;
+
+      while (i < 10) {
+        // 변수 i가 10보다 작을 때만 while 문을 반복함.
+        document.write(i + "<br>");
+        i++; // 변수 i를 1씩 증가시켜 10보다 커지면 반복문을 종료함.
+      }
+    </script>
+    <hr />
+
+    <body>
+      <h1>do / while 문</h1>
+
+      <script>
+        var i = 1,
+          j = 1;
+
+        while (i > 3) {
+          // 변수 i의 초기값은 1이기 때문에 이 while 문은 한 번도 실행되지 않음.
+          document.write("i : " + i++ + "<br>");
+        }
+
+        do {
+          // 변수 j의 초기값은 1이기 때문에 이 do / while 문은 단 한 번만 실행됨.
+          document.write("j : " + j++ + "<br>");
+        } while (j > 3);
+      </script>
+    </body>
+    <hr />
+
+    <h1>for 문</h1>
+
+    <script>
+      /*
+  var i = 1;
+  while (i < 10) { // 변수 i가 10보다 작을 때만 while 문을 반복함.
+    document.write(i + "<br>");
+    i++; // 변수 i를 1씩 증가시켜 변수 i가 10보다 커지면 반복문을 종료함.
+  }
+  */
+      for (var i = 1; i < 10; i++) {
+        document.write(i + "<br>");
+      }
+    </script>
+
+    <hr />
+
+    <h1>for / in 문</h1>
+
+    <script>
+      var arr = [3, 4, 5];
+
+      for (var i = 0; i < arr.length; i++) {
+        // 배열 arr의 모든 요소의 인덱스(index)를 출력함.
+        document.write(i + " ");
+      }
+      document.write("<br>");
+
+      for (var i in arr) {
+        // 위와 같은 동작을 하는 for / in 문
+        document.write(i + " ");
+      }
+    </script>
+    <hr />
+
+    <h1>for / in 문</h1>
+
+    <script>
+      var obj = {
+        name: "이순신",
+        age: 20,
+      };
+
+      for (var i in obj) {
+        document.write(i + " : " + obj[i] + "<br>");
+      }
+
+      var obj1 = { name: "김창복", age: "55" };
+      for (o in obj1) {
+        console.log("key: " + o + ", value: " + obj1[o]);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>대화 상자</h1>
+    <button onclick="alertDialogBox()">alert 대화 상자</button>
+    <button onclick="confirmDialogBox()">confirm 대화 상자</button>
+    <button onclick="promptDialogBox()">prompt 대화 상자</button>
+    <p id="text"></p>
+    <script>
+      function alertDialogBox() {
+        alert("확인을 누를 때까지 다른 작업을 할 수 없어요!");
+      }
+      function confirmDialogBox() {
+        var str;
+        if (confirm("확인이나 취소를 눌러주세요!") == true) {
+          str = "당신은 확인을 눌렀습니다!";
+        } else {
+          str = "당신은 취소을 눌렀습니다!";
+        }
+        document.getElementById("text").innerHTML = str;
+      }
+      function promptDialogBox() {
+        var inputStr = prompt("당신의 이름을 입력해 주세요 : ", "홍길동");
+        if (inputStr != null) {
+          document.getElementById("text").innerHTML =
+            " 이름은 " + inputStr + "입니다.";
+        }
+      }
+    </script>
+  </body>
+</html>

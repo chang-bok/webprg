@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    style
+      include style.css
+  body
+    h1
+    | 회원관리
+    ul
+        li
+            a(href='/edit/'+ idx) 회원 수정
+        li
+            a(href='/delete/'+ idx) 회원 탈퇴

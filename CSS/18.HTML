@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      input {
+        width: 20%;
+        padding: 10px 20px;
+        margin: 5px 0;
+      }
+      input[type="text"] {
+        border: solid 2px #ffe4b5;
+        /* outline: none; */
+      }
+      input[type="text"]:focus {
+        border: solid 2px #d2691e;
+      }
+      input[type="password"] {
+        border: solid 1px black;
+      }
+      input[type="password"]:focus {
+        background-color: #e0ffff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>포커스가 있는 input 요소의 스타일 설정</h2>
+    <form>
+      사용자 : <br />
+      <input type="text" name="username" /><br />
+      비밀번호 : <br />
+      <input type="password" name="password" />
+    </form>
+  </body>
+</html>

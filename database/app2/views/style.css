@@ -1,0 +1,30 @@
+body {
+    font-weight: bolder;
+    }
+h2 {
+    border-bottom: 1px solid gray;
+    text-align: center;
+  }
+a {
+      display: block;
+      text-decoration: none;
+      width : 130px;
+      margin: 10px;
+    }
+a:hover {
+      background-color: #cd853f;
+      color: white;
+    }
+ul {
+    border-bottom: 1px solid gray;
+   } 
+p {
+    border-bottom: 1px solid gray;
+    color: blue; 
+    }
+   
+input, textarea {
+     display: block;
+     padding: 5px;
+     margin: 5px;
+}

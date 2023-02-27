@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    style
+      include style.css
+    body
+        h3
+            a(href='/') 웹서버 프로그램 개요
+        ul
+
+        artcle
+            h3= 'Delete? '+ topic.title
+            form(action='/delete/'+topic.id method='post')
+                p
+                    input(type='submit' value='YES')
+        a(href='/'+topic.id) NO

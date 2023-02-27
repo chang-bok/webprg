@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>HTML 태그 이름을 이용한 선택</h2>
+    <ul>
+      <li>첫 번째 아이템이에요!</li>
+      <li>두 번째 아이템이에요!</li>
+      <li>세 번째 아이템이에요!</li>
+      <li>네 번째 아이템이에요!</li>
+      <li>다섯 번째 아이템이에요!</li>
+    </ul>
+    <script>
+      var selectedItem = document.getElementsByTagName("li");
+      for (var i = 0; i < selectedItem.length; i++) {
+        selectedItem.item(i).style.color = "red";
+      }
+    </script>
+    <hr />
+
+    <h1>아이디를 이용한 선택</h1>
+    <ul>
+      <li>첫 번째 아이템이에요!</li>
+      <li id="even">두 번째 아이템이에요!</li>
+      <li>세 번째 아이템이에요!</li>
+      <li id="even">네 번째 아이템이에요!</li>
+      <li>다섯 번째 아이템이에요!</li>
+    </ul>
+    <script>
+      var selectedItem = document.getElementById("even");
+      selectedItem.style.color = "red";
+    </script>
+    <hr />
+
+    <h1>클래스를 이용한 선택</h1>
+    <ul>
+      <li class="odd">첫 번째 아이템이에요!</li>
+      <li>두 번째 아이템이에요!</li>
+      <li class="odd">세 번째 아이템이에요!</li>
+      <li>네 번째 아이템이에요!</li>
+      <li class="odd">다섯 번째 아이템이에요!</li>
+    </ul>
+
+    <script>
+      var selectedItem = document.getElementsByClassName("odd");
+      for (var i = 0; i < selectedItem.length; i++) {
+        // 선택된 모든 요소의 텍스트 색상을 변경함.
+        selectedItem.item(i).style.color = "red";
+      }
+    </script>
+    <hr />
+
+    <h1>innerHTML을 이용한 요소의 내용 변경</h1>
+    <p id="text">이 문장을 바꿀 것입니다!</p>
+
+    <script>
+      let str = document.getElementById("text");
+
+      setTimeout(function () {
+        str.innerHTML = "이 문장으로 바뀌었습니다!";
+      }, 10000);
+    </script>
+
+    <hr />
+
+    <h2>속성 이름을 이용한 속성값 변경</h2>
+    <a id="link" href="html/intro">HTML 수업 바로 가기!</a><br /><br />
+    <button onclick="changeLink()">자바스크립트 수업으로 바꾸기!</button>
+
+    <script>
+      function changeLink() {
+        var link = document.getElementById("link");
+        link.href = "javascript/intro";
+        link.innerHTML = "자바스크립트 수업 바로 가기!";
+      }
+    </script>
+    <hr />
+
+    <h1>DOM 요소의 스타일 변경</h1>
+    <p id="text">이 문자열의 기본색은 검정색입니다!</p>
+    <button onclick="changeRedColor()">빨간색 글자!</button>
+    <button onclick="changeBlackColor()">검정색 글자!</button>
+
+    <script>
+      let str = document.getElementById("text");
+      function changeRedColor() {
+        str.style.color = "red"; // 해당 요소의 글자색을 빨간색으로 변경함.
+      }
+      function changeBlackColor() {
+        str.style.color = "black"; // 해당 요소의 글자색을 검정색으로 변경함.
+      }
+    </script>
+  </body>
+</html>

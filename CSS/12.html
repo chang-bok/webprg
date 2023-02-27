@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .dotted {
+        border-style: dotted;
+      }
+      .dashed {
+        border-style: dashed;
+      }
+      .solid {
+        border-style: solid;
+      }
+      .double {
+        border-style: double;
+      }
+      .inset {
+        border-style: inset;
+      }
+      .none {
+        border-style: none;
+      }
+      .dottedA {
+        border-style: dotted;
+        border-width: 2px;
+      }
+      .dottedB {
+        border-style: dotted;
+        border-width: 5px;
+      }
+      .dashedA {
+        border-style: dashed;
+        border-width: thin;
+      }
+      .dashedB {
+        border-style: dashed;
+        border-width: thick;
+      }
+      .doubleA {
+        border-style: double;
+        border-width: 5px;
+      }
+      .doubleB {
+        border-style: double;
+        border-width: thick;
+      }
+      .mix {
+        border-style: solid;
+        border-width: 1px 2px 10px thick;
+      }
+
+      p {
+        border-style: solid;
+        border-width: 5px;
+      }
+      .red {
+        border-color: red;
+      }
+      .green {
+        border-color: rgb(0, 255, 0);
+      }
+      .blue {
+        border-color: #0000ff;
+      }
+      .mix {
+        border-color: red yellow blue maroon;
+      }
+
+      div {
+        background-color: #7fffd4;
+        border: 2px solid teal;
+      }
+      div.mar {
+        margin-top: 100px;
+        margin-right: 150px;
+        margin-bottom: 30px;
+        margin-left: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>테두리의 모양 변경</h1>
+    <p class="dotted">border-style 속성값을 dotted로 한 단락입니다.</p>
+    <p class="dashed">border-style 속성값을 dashed로 한 단락입니다.</p>
+    <p class="solid">border-style 속성값을 solid로 한 단락입니다.</p>
+    <p class="double">border-style 속성값을 double로 한 단락입니다.</p>
+    <p class="none">border-style 속성값을 none으로 한 단락입니다.</p>
+    <h1>border-width 속성을 이용한 테두리의 두께 설정</h1>
+    <p class="dottedA">속성값을 2px로 한 단락</p>
+    <p class="dottedB">속성값을 5px로 한 단락</p>
+    <p class="dashedA">속성값을 thin으로 한 단락</p>
+    <p class="dashedB">속성값을 thick으로 한 단락</p>
+    <p class="doubleA">속성값을 5px로 한 단락</p>
+    <p class="doubleB">속성값을 thick으로 한 단락</p>
+    <p class="mix">border마다 각각의 속성값을 적용한 단락</p>
+
+    <h2>border-color 속성을 이용한 테두리의 색상 변경</h2>
+    <p class="red">border-color 속성값을 red로 한 단락입니다.</p>
+    <p class="green">border-color 속성값을 green로 한 단락입니다.</p>
+    <p class="blue">border-color 속성값을 blue로 한 단락입니다.</p>
+    <p class="mix">
+      테두리마다 각각의 border-color 속성값을 적용한 단락입니다.
+    </p>
+
+    <h1>마진(margin) 영역 설정</h1>
+    <div>아무런 margin 속성값도 설정하지 않은 요소입니다.</div>
+    <br />
+    <div class="mar">margin 속성값을 각 측면마다 별도로 지정한 요소입니다.</div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>continue 문</h1>
+    <script>
+      var exceptNum = 3;
+      // exceptNum의 배수는 출력하지 않음.
+      for (var i = 0; i <= 100; i++) {
+        if (i % exceptNum == 0) continue;
+        document.write(i + " ");
+      }
+    </script>
+    <hr />
+
+    <h1>break 문</h1>
+    <script>
+      var lectures = ["html", "css", "자바스크립트", "php"];
+      var topic = "자바스크립트";
+      for (var i = 0; i < lectures.length; i++) {
+        if (lectures[i] == topic) {
+          document.write(topic + " 과목은 " + (i + 1) + "번째 과목입니다.");
+          break; // 원하는 값을 찾은 후에는 더 이상 for 문을 반복하지 않고 빠져나감.
+        }
+      }
+    </script>
+  </body>
+</html>

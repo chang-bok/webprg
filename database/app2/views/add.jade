@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    style
+      include style.css
+    body
+        h3
+            a(href='/') 웹서버 프로그램 개요
+        form(action='/add' method='post')
+            p
+                input(type='text' name='title' placeholder='제목')
+            p
+                textarea(name='description' placeholder='설명' cols='30' rows = '5')
+            p
+                input(type='text' name='author' placeholder='작성자')
+            p
+                input(type='submit')

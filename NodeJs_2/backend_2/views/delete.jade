@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    style
+      include style.css
+  body
+    artcle
+      h1= 'Delete? '+member.name + '님 탈퇴하겠습니까'
+      form(action='/delete/'+member.idx method='post')
+          p
+              input(type='submit' value='YES')
+      a(href='/'+member.idx) NO
